@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
             const region = body.location.region
             const country = body.location.country
             
-            callback(undefined, namepart + ', ' + region + ', ' + country + ': ' + body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees Celsius. It feels like ' + body.current.feelslike + ' degrees Celsius.')
+            callback(undefined, namepart + ', ' + region + ', ' + country + ': ' + body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees Celsius. It feels like ' + body.current.feelslike + ' degrees Celsius. The current hunidity is ' + body.current.humidity + 'percent.')
             // callback(undefined, response.body.location.name + ', ' + response.body.location.region + ', ' + response.body.location.country + ': ' + response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' degrees Celsius. It feels like ' + response.body.current.feelslike + ' degrees Celsius.')
         } 
         
